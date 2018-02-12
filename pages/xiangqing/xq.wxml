@@ -1,0 +1,99 @@
+<view class="a">
+  <view class="item4">车号</view>
+  <view class="item5"> {{data.fch}}</view>
+  <button class="item6" bindtap="chedui">车队加油</button>
+</view>
+<view class="a">
+  <view class="item1">驾驶员</view>
+  <view class="item2"> {{data.fjsy}}</view>
+</view>
+<view class="a">
+  <view class="item1">派工单号</view>
+  <view class="item2"> {{data.fbillNO}}</view>
+</view>
+<view class="a">
+  <view class="item1">行程</view>
+  <view class="item2"> {{data.fxc}} </view>
+  <!--<view class="item2"> ss</view>-->
+</view>
+<view class="a">
+  <view class="item1">起始时间</view>
+  <view class="item2"> {{t1}}</view>
+</view>
+<view class="a">
+  <view class="item1">终止时间</view>
+  <view class="item2"> {{t2}}</view>
+</view>
+
+<view class="a">
+  <view class="item1">出车前公里</view>
+  <input class="item7" type="digit" bindinput="put3" placeholder="请输入" />
+</view>
+
+<view class="a">
+  <view class="item1">出车后公里</view>
+  <input class="item7" type="digit" bindinput="put4" placeholder="请输入" />
+</view>
+<view class="a">
+  <view class="item1">现收车费</view>
+  <input class="item7" type="digit" bindinput="put5" placeholder="请输入" />
+</view>
+
+<view class="listForm">
+  <view class="formTit">
+    <text class="normal border">序号</text>
+    <text class="long border">项目代码</text>
+    <text class="long border">项目名称</text>
+    <text class="normal border">金额</text>
+    <text class="normal border">升数</text>
+    <text class="normal">备注</text>
+  </view>
+  <view class="formCont" wx:for="{{dan}}">
+    <text class="normal border">{{index}}</text>
+    <text class="long border">{{item.daima}}</text>
+    <text class="long border">{{item.mingchen}}</text>
+
+    <text class="normal border" type="digit" wx:if="{{item.daima=='A05'}}" bindinput="put1" id="{{index}}">{{cheduijiayou}}</text>
+    <input class="normal border" type="digit" wx:if="{{item.daima!='A05'}}" bindinput="put1" id="{{index}}" />
+
+    <input class="normal border"  id="{{index}}"  value="{{item.daima=='A05'?FsjjyQty:0}}" bindinput="oilAmountChange"/>
+    <input class="normal" bindinput="put2" id="{{index}}" />
+  
+  </view>
+
+</view>
+<!--<view class="biaotou">
+  <view class="xuhao">序号</view>
+  <view class="daima">项目代码</view>
+  <view class="mingcheng">项目名称</view>
+  <view class="jine">金额</view>
+  <view class="xuhao">升数</view>
+  <view class="beizhu">备注</view>
+</view>
+
+
+<scroll-view class="sc">
+  <view wx:for="{{dan}}" class="list">
+    <view class="biaotou">
+      <view class="xuhao">{{index}}</view>
+      <view class="daima">{{item.daima}}</view>
+      <view class="mingcheng">{{item.mingchen}}</view>
+      <view class="jine" wx:if="{{item.daima=='A05'}}"> <text type="digit" bindinput="put1" id="{{index}}">{{cheduijiayou}}</text></view>
+      <view class="jine" wx:else> <input type="digit" bindinput="put1" id="{{index}}" /> </view>
+
+
+       <input class="beizhu" bindinput="put2" id="{{index}}" />
+
+      <view class="xuhao">{{item.daima=='A05'?FsjjyQty:0}}</view>
+
+     
+
+    </view>
+
+  </view>
+</scroll-view>-->
+<button bindtap="tijiao" disabled="{{ifCanWork}}">提交</button>
+
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>

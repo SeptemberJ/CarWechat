@@ -1,0 +1,24 @@
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>
+<view class="noData" wx:if="{{che.length == 0}}"> 没有数据 </view>
+<view wx:else><scroll-view class="sc">
+  <view wx:for="{{che}}" class="list" bindtap="tap" id="{{index}}">
+    <view class="item">加油卡号</view>
+    <view class="item2">{{item.fcardNo}}</view>
+     <view class="item">车号</view>
+    <view class="item2">{{chehao}}</view>
+     <view class="item">加油时间</view>
+    <view class="item2">{{item.fpayTime}}</view>
+     <view class="item">金额</view>
+    <view class="item2">{{item.fmoney}}</view>
+    <view class="item">单价</view>
+    <view class="item2">{{item.fprice}}</view>
+     <view class="item">加油时间</view>
+    <view class="item2">{{item.fpayTime}}</view>
+    <view class="item">加油量/升</view>
+    <view class="item2">{{item.fqty}}</view>
+    
+  </view>
+</scroll-view> </view>
+

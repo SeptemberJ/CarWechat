@@ -1,0 +1,42 @@
+.scan{
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background: #ebebeb;
+  margin-bottom: 20rpx;
+}
+
+.list{
+   margin: 25rpx;
+ 
+}
+.a{
+    margin: 10rpx;
+}
+.b{
+  width: 30%;
+     display: inline-block;
+     line-height: 60rpx;
+  vertical-align: middle;
+}
+.c{
+    width: 60%;
+     display: inline-block;
+     line-height: 60rpx;
+  vertical-align: middle;
+}
+
+.item{
+      margin: 10rpx;
+   height: 60rpx;
+}
+.radio-group{
+  margin-top: 15rpx;
+}
+/*.b{
+    content: "投诉人"
+}
+.c{
+    content: "投诉电话"
+}*/

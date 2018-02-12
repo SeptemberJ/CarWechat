@@ -1,0 +1,45 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-nickname">{{data.mingchen}}</text>
+     <text class="userinfo-nickname">{{openid}}</text>
+  </view>
+</view>
+<!--有单-->
+<view wx:if="{{data.listPaiGongDan.length>0}}">
+  <view   wx:for="{{data.listPaiGongDan}}" class="list">
+    <view clss="dan" bindtap="tap" id="{{index}}">{{item.fbillNO}}          </view>
+  </view>
+</view>
+<!--无单-->
+<view wx:elif="{{data.listPaiGongDan.length==0}}">
+  <view>没有报销单需处理</view>
+</view>
+
+ <loading hidden="{{loadingHidden}}">
+    加载中...
+</loading>
+
+
+  <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>  
+<!--content-->  
+<!--使用animation属性指定需要执行的动画-->  
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">  
+  
+  <!--drawer content-->  
+  <view class="drawer_title">请输入电话号码</view>  
+  <view class="drawer_content">  
+    <view class="top grid">  
+      <label class="title col-0">电话</label>  
+      <input class="input_base input_h30 col-1" name="rName" bindinput="aaa"></input>  
+    </view>  
+    
+    
+   
+  </view>  
+  <view class="btn_ok" bindtap="powerDrawer" data-statu="close">确定</view>  
+</view>  
+

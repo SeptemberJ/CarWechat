@@ -1,0 +1,8 @@
+
+
+<image class="a" src="{{p}}"></image>
+
+<button bindtap="tap" class="b" type="primary">提交</button>
+ <!--<loading hidden="{{loadingHidden}}">
+    加载中...
+  </loading>-->

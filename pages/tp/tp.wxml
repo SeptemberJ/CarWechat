@@ -1,0 +1,20 @@
+
+<view class="noData" wx:if="{{obj.length == 0}}"> 没有数据 </view>
+<view wx:else><scroll-view class="sc">
+  <!--<view wx:for="{{obj}}" class="{{item.isdaochu==0||item.isdaochu==2?'list':'list2'}}"  id="{{index}}">-->
+    <view wx:for="{{obj}}" class="{{(item.isdaochu == 2 && item.issearch!=2) || (item.isdaochu == 0) || (item.isdaochu == 1 && item.issearch == 0)?'list':'list2'}}"  id="{{index}}">
+  <navigator url="../tp2/tp2?no={{item.fbillno}}&path={{item.fpath}}">
+    <view class="item">单号</view>
+    <view class="item2">{{item.fbillno}}</view>
+     <view class="item">车号</view>
+    <view class="item2">{{item.fch}}</view>
+</navigator>
+
+    
+    
+  </view>
+</scroll-view> </view>
+
+ <loading hidden="{{loadingHidden}}">
+    加载中...
+  </loading>

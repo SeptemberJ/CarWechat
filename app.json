@@ -1,0 +1,48 @@
+{
+  "pages":[
+      "pages/index/index",
+      "pages/xiangqing/xq",
+      "pages/baoxiu/bx",
+      "pages/logs/logs",
+      "pages/chedui/chedui",
+      "pages/pj/pj",
+      "pages/tp/tp",
+      "pages/tp2/tp2"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }, 
+  "tabBar": {
+    "color": "white",
+    "selectedColor": "#f9f027",
+    "borderStyle": "white",
+    "backgroundColor": "#836FFF",
+    "list": [{
+      "pagePath": "pages/index/index",
+     
+    
+      "text": "报销"
+    }, {
+      "pagePath": "pages/baoxiu/bx",
+   
+  
+      "text": "报修"
+    },
+     {
+      "pagePath": "pages/pj/pj",
+   
+  
+      "text": "评价"
+    },
+    {
+      "pagePath": "pages/tp/tp",
+   
+  
+      "text": "行程单"
+    }]
+  }
+}

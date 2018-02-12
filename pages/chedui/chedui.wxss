@@ -1,0 +1,21 @@
+.list{
+    padding: 10rpx;
+    margin: 20rpx;
+    background: lightskyblue;
+    border: 1rpx solid blue;
+    height: auto;
+    /* height: 320rpx; */
+    border-radius: 15rpx;
+}
+.item{
+    display: inline-block;
+    height: 40rpx;
+    width: 38%;
+ 
+}
+.item2{
+    display: inline-block;
+    height: 40rpx;
+    width: 58%;
+   
+}

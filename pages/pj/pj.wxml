@@ -1,0 +1,48 @@
+<!--<button bindtap="s" class="scan">扫一扫司机二维码</button>-->
+<view class="scan" bindtap="s" class="scan">
+  <text>扫一扫司机二维码</text>
+</view>
+
+<view class="a">车号：</view>
+<view class="a">{{ch}}</view>
+<view class="a">驾驶员：</view>
+<view class="a">{{jsy}}</view>
+<view wx:for="{{list}}" class="list">
+  <view>{{item.name}}</view>
+  <radio-group class="radio-group" bindchange="radioChange" id="{{index}}">
+    <label wx:for="{{item.item}}">
+      <radio class="ra" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+    </label>
+  </radio-group>
+</view>
+
+<!--<view>车容车貌</view>
+<radio-group class="radio-group" bindchange="radioChange">
+  <label  wx:for="{{items}}">
+    <radio class="ra" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+  </label>
+</radio-group>
+<view>行车安全</view>
+<radio-group class="radio-group" bindchange="radioChange2">
+  <label  wx:for="{{items2}}">
+    <radio class="ra" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+  </label>
+</radio-group>
+<view>服务态度</view>
+<radio-group class="radio-group" bindchange="radioChange3">
+  <label  wx:for="{{items3}}">
+    <radio class="ra" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+  </label>
+</radio-group>-->
+<view class="item">
+  <view class="b">评价人:</view>
+  <input class="c" placeholder="请输入姓名" bindinput="put1" />
+</view>
+<view class="item">
+  <view class="b">评价人电话:</view>
+  <input class="c" placeholder="请输入电话" bindinput="put2" />
+</view>
+<button bindtap="tj" type="warn" style="width:50%;margin-top:40rpx;">提交</button>
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>

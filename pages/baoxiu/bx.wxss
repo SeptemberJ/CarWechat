@@ -1,0 +1,62 @@
+.columnTit{
+  margin: 15rpx 13rpx 20rpx 13rpx;
+  font-weight: bold;
+}
+.item {
+  margin-top: 20rpx;
+  margin-left: 2%;
+  width: 96%;
+  background-color: #f1f5ff;
+  height: 100rpx;
+}
+
+.left {
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #f1f5ff;
+  float: left;
+  width: 30%;
+}
+
+.right2 {
+   line-height: 100rpx;
+  height: 100rpx;
+  float: left;
+  background-color: white;
+  width: 65%;
+  border: 1px black solid;
+  position: relative;
+}
+.right3 {
+   line-height: 100rpx;
+  height: 100rpx;
+  
+  background-color: white;
+  width: 100%;
+ 
+  position: relative;
+}
+
+.ch {
+  position: absolute;
+ z-index: 100;
+ 
+}
+
+.right {
+  height: 95%;
+  float: left;
+  background-color: white;
+  width: 65%;
+  border: 1px black solid;
+}
+
+.bt {
+  width: 50%;
+  margin-top: 50rpx;
+  
+}
+
+.xiamgmu {
+  height: 240rpx;
+}

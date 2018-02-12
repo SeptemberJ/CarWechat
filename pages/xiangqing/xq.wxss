@@ -1,0 +1,179 @@
+page{
+  font-size: 30rpx;
+}
+.item {
+  margin-left: 2%;
+  width: 96%;
+  background-color: lightgray;
+}
+
+.a {
+  /*margin-left: 2%;*/
+  width: 96%;
+  height: 60rpx;
+}
+
+.item1 {
+  line-height: 60rpx;
+  display: inline-block;
+  background-color: lightgray;
+  width: 30%;
+  height: 60rpx;
+}
+.item7 {
+  border-bottom: 1rpx solid black;
+
+  line-height: 60rpx;
+  vertical-align: middle;
+  display: inline-block;
+  width: 70%;
+  height: 60rpx;
+}
+.item2 {
+  line-height: 60rpx;
+  vertical-align: middle;
+  display: inline-block;
+  width: 70%;
+  height: 60rpx;
+}
+.item4 {
+  background-color: lightgray;
+  line-height: 60rpx;
+  vertical-align: middle;
+  display: inline-block;
+  width: 30%;
+  height: 60rpx;
+}
+
+.item5 {
+  line-height: 60rpx;
+  vertical-align: middle;
+  display: inline-block;
+  width: 40%;
+  height: 60rpx;
+}
+.item6 {
+  line-height: 60rpx;
+  vertical-align: middle;
+  display: inline-block;
+  width: 30%;
+  height: 60rpx;
+}
+
+
+.item3 {
+  width: 80rpx;
+  height: 60rpx;
+}
+
+.biaotou {
+  margin-top: 10rpx;
+  width: 100%;
+  clear: both;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: lightskyblue;
+}
+
+.xuhao {
+  line-height: 60rpx;
+  vertical-align: middle;
+  height: 60rpx;
+  border: 1rpx gray solid;
+  background: lightskyblue;
+  display: inline-block;
+  width: 10%;
+}
+
+.daima {
+  line-height: 60rpx;
+  vertical-align: middle;
+  height: 60rpx;
+  border: 1rpx gray solid;
+  background: lightskyblue;
+  display: inline-block;
+  width: 20%;
+}
+
+.mingcheng {
+  line-height: 60rpx;
+  vertical-align: middle;
+  height: 60rpx;
+  background: lightskyblue;
+  width: 20%;
+  display: inline-block;
+  border: 1rpx gray solid;
+}
+
+.jine {
+  line-height: 58rpx;
+  vertical-align: middle;
+  height:58rpx;
+  background: lightskyblue;
+  width: 125rpx;
+  display: inline-block;
+  border: 1rpx gray solid;
+}
+
+.beizhu {
+  line-height: 58rpx;
+  vertical-align: middle;
+  width: 150rpx;
+  background: lightskyblue;
+  height: 58rpx;
+  display: inline-block;
+  border: 1rpx gray solid;
+}
+
+.sc {
+  clear: both;
+}
+
+/*.test{
+  position: absolute;
+  
+}*/
+
+.listForm{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formTit,.formCont{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightskyblue;
+}
+.formCont{
+  margin-top: 10rpx;
+}
+.formTit text{
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.border{
+  border-right: 1rpx solid gray;
+}
+/*.formTit text:not(:last-of-type){
+  border-right: 1px solid gray;
+}*/
+.formCont text{
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.normal{
+  width: 99rpx;
+}
+.long{
+  width: 174rpx;
+}

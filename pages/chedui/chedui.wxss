@@ -17,5 +17,13 @@
     display: inline-block;
     height: 40rpx;
     width: 58%;
-   
+}
+.sc{
+  margin-bottom: 50px;
+}
+.fixedButton{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }

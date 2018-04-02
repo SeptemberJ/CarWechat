@@ -108,7 +108,6 @@ Page({
                     // })
 
                     var url2 = encodeURI(h.main + '/baoxiaodan/page/searchOpen_idCount.html?open_id=' + res.data.openid)
-                    // var url2 = encodeURI(h.main + '/baoxiaodan/page/searchOpen_idCount.html?open_id=oPkvs0DIywPrpne7tECk9qhJIb-4')
                     wx.request({
                       url: url2,
                       method: 'GET',
@@ -123,7 +122,6 @@ Page({
                           })
 
                           var url5 = encodeURI(h.main + '/baoxiaodan/page/paiGongDan.html?fjsy=' + that.data.openid)
-                          // var url5 = encodeURI(h.main + '/baoxiaodan/page/paiGongDan.html?fjsy=oPkvs0DIywPrpne7tECk9qhJIb-4')
                           console.log(url5)
                           wx.request({
                             url: url5,

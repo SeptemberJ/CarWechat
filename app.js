@@ -26,6 +26,6 @@ App({
     userInfo:null,
     car:"",
     seatnumber:"",
-    // openid:'oPkvs0CIrf5xFUzqMY3y8599fBL4'
+    openid:'searchOpen_idCount'
   }
 })

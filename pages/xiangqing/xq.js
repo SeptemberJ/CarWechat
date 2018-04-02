@@ -53,9 +53,9 @@ Page({
     var t2 = this.gettime(data.fzzrq);
 
     this.setData({
-
       data: data,
       dan: dan,
+      oilCardId:'',
       t1: t1,
       t2: t2,
       xianjin: 0,
@@ -185,7 +185,7 @@ Page({
     console.log('this.data.data======')
     console.log(this.data.data)
     shuju.dan = this.data.dan;
-
+    shuju.fjyfid_z = this.data.oilCardId;
     var that = this;
     var l = shuju.dan;
     for (var a in l) {
@@ -252,7 +252,7 @@ Page({
 
     console.log('提交的shuju------')
     console.log(shuju)
-    var oilCardId = this.data.fid
+    //var oilCardId = this.data.fid
     var that = this;
     wx.request({
       url: h.main + '/baoxiaodan/page/baoXiaoDan.html',
@@ -289,7 +289,7 @@ Page({
           wx.request({
             url: h.main + '/baoxiaodan/page/upIsuse.html?',
             data: {
-              fid_z: oilCardId ? oilCardId:'' //fid
+              fid_z: that.data.oilCardId ? that.data.oilCardId:'' //fid
             },
             method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
             // header: {}, // 设置请求的 header

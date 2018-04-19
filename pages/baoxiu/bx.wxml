@@ -16,6 +16,11 @@
 </view>
 
 <view class="item">
+<view class="left">轮胎编号</view>
+<input  class="right" bindinput="put5" value="{{fltbh}}"/>
+</view>
+
+<view class="item">
 <view class="left">座位数</view>
 <input  class="right" bindinput="put3" value="{{zuoweishu}}" disabled="true"/>
 </view>
@@ -24,6 +29,8 @@
 <view class="left">报修项目</view>
 <textarea  class="right xiamgmu" bindinput="put4" value="{{baoxiu}}"/>
 </view>
+
+
 <button bindtap="tj" class="bt" type="warn" disabled="{{st}}">提交</button>
  <loading hidden="{{loadingHidden}}">
     加载中...

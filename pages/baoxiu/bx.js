@@ -9,6 +9,7 @@ Page({
     baoxiu: "",
     loadingHidden: true,
     zuoweishu: "",
+    fltbh:"",
     st:false
 
   },
@@ -62,6 +63,11 @@ Page({
       baoxiu: e.detail.value
     });
   },
+  put5: function (e) {
+    this.setData({
+      fltbh: e.detail.value
+    });
+  },
   tj: function (e) {
     var shuju = {};
     var that = this;
@@ -69,6 +75,7 @@ Page({
     shuju.jiashiyuan = this.data.jiashiyuan;
     shuju.zuoweishu = this.data.zuoweishu;
     shuju.baoxiu = this.data.baoxiu;
+    shuju.fltbh = this.data.fltbh;
     console.log(JSON.stringify(shuju));
 
     if (this.data.chehao == "") {
@@ -134,7 +141,6 @@ Page({
             title: '车号不存在',
             icon: 'success',
             duration: 2000,
-
           })
         } else {
           st = 1;
@@ -157,6 +163,7 @@ Page({
                 // jiashiyuan: "",
                 // zuoweishu: "",
                  baoxiu: "",
+                 fltbh:"",
                 // loadingHidden: true
               })
               wx.showToast({

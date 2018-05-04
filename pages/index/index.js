@@ -115,6 +115,8 @@ Page({
                         console.log("+++++++++++++++++")
                         console.log(res.data)
                         if (res.data == 1) {
+                          console.log('返回1---')
+                          app.globalData.ifSignIn = true
                           wx.showToast({
                             title: '',
                             icon: '返回1',
@@ -156,6 +158,7 @@ Page({
 
 
                         } else {
+                          app.globalData.ifSignIn = false
                           // var currentStatu = e.currentTarget.dataset.statu;
                           // if (currentStatu == "open") {
                           //   console.log(e.currentTarget.dataset.name)

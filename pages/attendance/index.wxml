@@ -1,0 +1,19 @@
+<!--topCard  -->
+<view class='TopCard'>
+  <image class='Avatar' src='{{userInfo.avatarUrl}}'></image> 
+  <text class='NickName'>{{userInfo.nickName}}</text>
+  <text class='Clock'>{{DateInfo.Hour + ':' + DateInfo.Minute +':' + DateInfo.Second}}</text>
+</view>
+<view class='AttendanceItem'>
+  <!-- <view wx:if="{{ifSignIn}}" class='AttendanceItem_left'>
+    <text class='Attendance_time_tit'>签到时间</text>
+    <text class='Attendance_time'>08:31:36</text>
+  </view>
+  <view wx:if="{{!ifSignIn}}" class='AttendanceItem_left'>
+    <text class='Attendance_time_tit'>今天还未签到</text>
+  </view> -->
+  <view class=''>
+    <view wx:if="{{ifSignIn}}" class='AttendanceItem_Bt' bindtap='ToSignIn'>签到</view>
+    <view wx:if="{{!ifSignIn}}" class='AttendanceItem_Bt_disabled'>签到</view>
+  </view>
+</view>

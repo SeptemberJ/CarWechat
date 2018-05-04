@@ -7,7 +7,8 @@
       "pages/chedui/chedui",
       "pages/pj/pj",
       "pages/tp/tp",
-      "pages/tp2/tp2"
+      "pages/tp2/tp2",
+      "pages/attendance/index"
    
   ],
   "window":{
@@ -17,32 +18,27 @@
     "navigationBarTextStyle":"black"
   }, 
   "tabBar": {
-    "color": "white",
+    "color": "#000",
     "selectedColor": "#f9f027",
     "borderStyle": "white",
     "backgroundColor": "#836FFF",
     "list": [{
       "pagePath": "pages/index/index",
-     
-    
       "text": "报销"
     }, {
       "pagePath": "pages/baoxiu/bx",
-   
-  
       "text": "报修"
     },
-     {
+    {
       "pagePath": "pages/pj/pj",
-   
-  
       "text": "评价"
     },
     {
       "pagePath": "pages/tp/tp",
-   
-  
       "text": "行程单"
+    },{
+      "pagePath": "pages/attendance/index",
+      "text": "考勤"
     }]
   }
 }

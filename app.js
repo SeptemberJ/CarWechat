@@ -26,6 +26,7 @@ App({
     userInfo:null,
     car:"",
     seatnumber:"",
-    openid:'searchOpen_idCount'
+    openid:'searchOpen_idCount',
+    ifSignIn:false,
   }
 })

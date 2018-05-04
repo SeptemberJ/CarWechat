@@ -1,0 +1,86 @@
+
+page{
+  background: #efefef;
+}
+.TopCard{
+  width: 650rpx;
+  height: 300rpx;
+  margin: 100rpx auto 0 auto;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  /* color: #836FFF; */
+  border-bottom: 2px dashed #efefef;
+}
+.Avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: -50rpx;
+}
+.NickName{
+  font-size: 32rpx;
+}
+.Clock{
+  margin-top: 20rpx;
+  font-size: 80rpx;
+  font-weight: bold;
+}
+/*AttendanceItem  */
+.AttendanceItem{
+  width: 650rpx;
+  height: 150rpx;
+  padding: 10rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin: 0 auto;
+  border-bottom: 1px solid #efefef;
+}
+.AttendanceItem_left{
+  width: 400rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 20rpx;
+}
+.Attendance_time_tit, .Attendance_time{
+  font-size: 30rpx;
+}
+.AttendanceItem_right{
+  width: 200rpx;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AttendanceItem_Bt{
+  width: 150rpx;
+  height: 60rpx;
+  background: #836FFF;
+  padding: 10rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+}
+.AttendanceItem_Bt_disabled{
+  width: 100rpx;
+  height: 40rpx;
+  background: #ccc;
+  padding: 10rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 10rpx;
+}

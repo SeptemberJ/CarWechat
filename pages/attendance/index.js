@@ -9,19 +9,23 @@ Page({
 
   },
   onLoad(){
-    wx.getUserInfo({
-      success: (res)=> {
-        this.setData({
-          userInfo: res.userInfo
-        })
-      }
-    })
-    this.setData({
-      ifSignIn: app.globalData.ifSignIn
-    })
+    // wx.getUserInfo({
+    //   success: (res)=> {
+    //     this.setData({
+    //       userInfo: res.userInfo
+    //     })
+    //   }
+    // })
    
   },
   onShow(){
+    this.setData({
+      ifSignIn: app.globalData.ifSignIn,
+      head_img: app.globalData.head_img,
+      realname: app.globalData.realname
+    })
+    console.log('签到---')
+    console.log(app.globalData.userInfo)
     this.StartClock()
   },
   //签到

@@ -199,7 +199,8 @@ Page({
     }
     m3 = this.data.cheduijiayou;
     yf = 0;
-    yf = m1 + m2 + m3;
+    yf = (Number(m1) + Number(m1) + Number(m3)).toFixed(2)
+    //yf = m1 + m2 + m3;
     youliang = yf / yj;
     shuju.youliang = youliang;
     haoyou = youliang / (after - before) * 100;

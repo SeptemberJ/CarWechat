@@ -16,7 +16,7 @@ page{
   background: #fff;
   color: #000;
   /* color: #836FFF; */
-  border-bottom: 2px dashed #efefef;
+  /* border-bottom: 2px dashed #efefef; */
 }
 .Avatar{
   width: 120rpx;
@@ -65,22 +65,26 @@ page{
   justify-content: center;
 }
 .AttendanceItem_Bt{
-  width: 150rpx;
-  height: 60rpx;
-  background: #836FFF;
-  padding: 10rpx;
+  width: 150px !important;
+  margin: 20px auto;
+  /* width: 150rpx;
+  height: 60rpx; */
+  background: #836FFF !important;
+  /* padding: 10rpx;
   color: #fff;
   text-align: center;
-  line-height: 60rpx;
+  line-height: 60rpx !important;
   border-radius: 10rpx;
+  font-size: 30rpx; */
 }
 .AttendanceItem_Bt_disabled{
-  width: 100rpx;
-  height: 40rpx;
+  width: 150px !important;
+  margin: 20px auto;
   background: #ccc;
-  padding: 10rpx;
+  color: #fff;
+  /* padding: 10rpx;
   color: #fff;
   text-align: center;
   line-height: 40rpx;
-  border-radius: 10rpx;
+  border-radius: 10rpx; */
 }

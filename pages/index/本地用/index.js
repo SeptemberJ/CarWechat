@@ -14,6 +14,7 @@ Page({
   //事件处理函数
 
   onLoad: function () {
+    console.log('9999')
 
 
   },
@@ -28,7 +29,8 @@ Page({
         userInfo: userInfo
       });
       //get
-      app.globalData.userInfo2 = userInfo;
+      app.globalData.userInfo = userInfo;
+      console.log('userInfo------')
       console.log(app.globalData.userInfo)
       var that2 = that
       //  var url= encodeURI( h.main + '/baoxiaodan/page/paiGongDan.html?fjsy=庄俞AAL548')
